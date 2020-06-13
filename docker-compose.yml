@@ -39,7 +39,7 @@ services:
   analysis:
     depends_on:
       - mongo
-    image: docker.pkg.github.com/romangr/culturalfootprintanalysis/culturalfootprintanalysis:${CULTURAL_ANALYSIS_IMAGE:-latest}
+    image: docker.pkg.github.com/romangr/culturalfootprintanalysis/cultural_footprint_analysis:${CULTURAL_ANALYSIS_IMAGE:-latest}
     restart: always
     environment:
       MONGO_HOST: mongo
